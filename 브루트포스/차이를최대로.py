@@ -2,6 +2,7 @@ def next_permutation(arr):
 
     n = len(arr)-1
     i = n
+    # 중복된 원소 있을 수 있으므로 부등호에 =를 포함시켜 주어야 함
     while arr[i-1] >= arr[i]:
         i -= 1
 
