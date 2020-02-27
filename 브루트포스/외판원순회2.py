@@ -1,3 +1,4 @@
+#외판원 순회
 def next_permutation(arr):
 
     n = len(arr)-1
