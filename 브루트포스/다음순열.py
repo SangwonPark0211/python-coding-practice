@@ -26,7 +26,6 @@ def next_permutation(arr):
     temp_list.sort()
     arr = arr[:j+1]
     arr = arr + temp_list
-    #arr[j+1:].sort()
     return arr
 
 if __name__=='__main__':
