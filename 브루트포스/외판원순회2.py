@@ -1,4 +1,3 @@
-#외판원 순회
 def next_permutation(arr):
 
     n = len(arr)-1
@@ -25,7 +24,7 @@ def next_permutation(arr):
     temp_list.sort()
     arr = arr[:j+1]
     arr = arr + temp_list
-    #arr[j+1:].sort()
+    
     return arr
 
 
