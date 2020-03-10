@@ -4,10 +4,8 @@ N,M = map(int, input().split())
 arr = list(map(int, input().split()))
 arr.sort()
 result = []
+result = set(result)
 for case in permutations(arr, M):
-    result.append(' '.join(map(str, case)))
-already_printed = []
-for i in result:
-    if i not in already_printed:
-        print(i)
-        already_printed.append(i)
+    if case not in result:
+        result.add(case)
+        print(' '.join(map(str, case)))
