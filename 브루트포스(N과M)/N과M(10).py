@@ -1,10 +1,10 @@
-from itertools import permutations
+from itertools import combinations
 
 N,M = map(int, input().split())
 arr = list(map(int, input().split()))
 arr.sort()
 result = []
-for case in permutations(arr, M):
+for case in combinations(arr, M):
     result.append(' '.join(map(str, case)))
 already_printed = []
 for i in result:
