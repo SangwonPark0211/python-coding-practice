@@ -1,3 +1,5 @@
+# 백준 3055
+
 dx = [0,1,0,-1]
 dy = [-1,0,1,0]
 
@@ -58,8 +60,3 @@ while not stop:
     if count <0:
         print('KAKTUS')
         break
-
-    """
-    1. board를 훼손하지 않고 record라는 기록목적의 이차원 리스트 선언
-    2. 각 단계를 나타낼 수 있는 flag 적절히 이용(stop, SET)
-    4. 어려운 자료구조를 사용하려고 애쓰지 말기, 해답은 항상 가장 심플한 way
